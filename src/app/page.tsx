@@ -1,12 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import { Card } from "@/card";
+import { useSearchParams } from "next/navigation";
 
 export default function Home() {
+  const searchParams = useSearchParams();
+
+  const guest = searchParams.get("guest");
+
   return (
-    <main className=" min-h-screen p-24 flex flex-col items-center justify-center">
+    <main className=" min-h-screen flex flex-col items-center justify-center container">
       <Card>
         <h1 className="text-4xl font-bold p-4">
-          Inbjudan till födelsedagskalas hos
+          Välkommen till partyt, {guest}!
         </h1>
         <Image
           src="/sol.jpg"
