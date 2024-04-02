@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Sunflower } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const font = Sunflower({ subsets: ["latin"], weight: "300" });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sol Rådell",
