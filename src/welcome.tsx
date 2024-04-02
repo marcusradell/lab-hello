@@ -10,5 +10,9 @@ export const Welcome = () => {
 
   if (!guest) return <>Välkommen till partyt!</>;
 
-  return <>Välkommen till partyt, {guest}!</>;
+  return (
+    <>
+      Välkommen till partyt, <span className="text-orange-600">{guest}</span>!
+    </>
+  );
 };
