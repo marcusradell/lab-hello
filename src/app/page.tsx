@@ -1,12 +1,18 @@
 import { Card } from "@/card";
+import { Welcome } from "@/welcome";
 
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white bg-opacity-25 m-auto flex flex-col items-center justify-center gap-4 container">
       <Card>
-        <h1 className="text-4xl font-bold p-4">Välkommen till partyt!</h1>
+        <h1 className="text-4xl font-bold p-4">
+          <Suspense fallback={<>Välkommen till partyt!</>}>
+            <Welcome />
+          </Suspense>
+        </h1>
 
         <Image
           priority
