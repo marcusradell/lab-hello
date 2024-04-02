@@ -1,4 +1,5 @@
 import { Card } from "@/card";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -25,12 +26,10 @@ export default function Home() {
           <span className="text-red-600"> Rådell</span>
         </h2>
       </Card>
+
       <Card>
         <h3 className="text-3xl font-bold p-4">När?</h3>
-        <p className="text-xl">
-          <div>Lördagen den 13:e april</div>
-          <div>Klockan 14:00</div>
-        </p>
+        <p className="text-xl">Lördagen den 13:e april Klockan 14:00</p>
       </Card>
 
       <Card>
@@ -55,25 +54,24 @@ export default function Home() {
 
       <Card>
         <h3 className="text-3xl font-bold">Telefon</h3>
-        <p className="text-xl p-4">
-          <div>
-            Pappa Marcus:{" "}
-            <a
-              className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              href="tel:+46725223325"
-            >
-              0725 22 33 25
-            </a>
-          </div>
-          <div>
-            Mamma Sandra:{" "}
-            <a
-              className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              href="tel:+46730441534"
-            >
-              073 044 15 34
-            </a>
-          </div>
+
+        <p className="text-xl pt-4">
+          Pappa Marcus:{" "}
+          <a
+            className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            href="tel:+46725223325"
+          >
+            0725 22 33 25
+          </a>
+        </p>
+        <p className="text-xl pb-4">
+          Mamma Sandra:{" "}
+          <a
+            className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            href="tel:+46730441534"
+          >
+            073 044 15 34
+          </a>
         </p>
       </Card>
     </main>
