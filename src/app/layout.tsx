@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Sunshiney } from "next/font/google";
+import { Sunflower } from "next/font/google";
 import "./globals.css";
 
-const font = Sunshiney({ subsets: ["latin"], weight: "400" });
+const font = Sunflower({ subsets: ["latin"], weight: "300" });
 
 export const metadata: Metadata = {
   title: "Sol Rådell",
